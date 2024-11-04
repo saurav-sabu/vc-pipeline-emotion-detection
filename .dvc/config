@@ -1,0 +1,4 @@
+[core]
+    remote = myremote
+['remote "myremote"']
+    url = C:\MyLearnings\ML-Pipeline-Cookiecutter\vc-pipeline-emotion-detection\temp
