@@ -90,3 +90,5 @@ target/
 
 temp/
 mlops/
+/model.pkl
+/metrics.json
