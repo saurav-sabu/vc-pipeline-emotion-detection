@@ -49,7 +49,7 @@ def save_metrics(metric_dict):
 
 def main():
     clf = load_model("model.pkl")
-    test_df = load_data(r"data/processed/test_bow.csv")
+    test_df = load_data(r"data/processed/test_tfidf.csv")
     X_test,y_test = split_X_test_y_test(test_df)
     y_pred,y_pred_proba = prediction(X_test,y_test,clf)
     metric_dict = evaluate_model(y_pred,y_test,y_pred_proba)

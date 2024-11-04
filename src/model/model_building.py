@@ -28,7 +28,7 @@ def save_model(gb):
 
 def main():
     params = load_params("params.yaml")
-    train_data_bow = load_data(r"data/processed/train_bow.csv")
+    train_data_bow = load_data(r"data/processed/train_tfidf.csv")
     X_train, y_train = get_X_train_y_train(train_data_bow)
     gb = model_training(X_train, y_train,params)
     save_model(gb)
